@@ -1,0 +1,126 @@
+.menupage {
+  .scmenu {
+    .menu__wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 580px;
+      grid-gap: 24px;
+      &-item {
+        transition: 0.4s;
+        position: relative;
+        .menu-text {
+          font-family: "Cormorant-SBI";
+          font-style: italic;
+          font-weight: 600;
+          font-size: 72px;
+          line-height: 87px;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          transition: 0.4s;
+          @include midflex();
+          span {
+            position: relative;
+            color: $white-cl;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100px;
+              height: 1px;
+              background-color: $main-cl;
+              bottom: -12.5px;
+              left: calc(50% - 50px);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 7px;
+              height: 7px;
+              transform: rotate(45deg);
+              background: currentColor;
+              transition: 0.4s;
+              background: $main-cl;
+              bottom: -15px;
+              right: 50%;
+            }
+          }
+          .add {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            background: $black-cl;
+            margin: auto;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.4s;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 50px;
+              height: 1px;
+              background-color: $main-cl;
+              bottom: 50%;
+              transform: translateX(-25px);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 50px;
+              height: 1px;
+              background-color: $main-cl;
+              bottom: 50%;
+              transform: rotate(90deg) translateY(25px);
+            }
+          }
+        }
+        .menu-img {
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            @include midimg();
+          }
+        }
+
+        &:hover {
+          .menu-text {
+            span {
+              opacity: 0;
+              visibility: hidden;
+              transition: 0.4s;
+            }
+            .add {
+              opacity: 0.6;
+              visibility: visible;
+              transition: 0.4s;
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      padding-top: 84px;
+    }
+  }
+}
+@include md {
+  .menupage {
+    .scmenu {
+      .menu__wrap {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 340px;
+      }
+    }
+  }
+}
+@include xs {
+  .menupage {
+    .scmenu {
+      .menu__wrap-item {
+        .menu-text {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}

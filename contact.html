@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Benoit</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+  </head>
+
+  <!-- Mỗi body của mỗi page nên có class ví dụ homepage, aboutpage, contactpage... -->
+
+  <body class="contactpage" id="contactpage">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="headermain">
+        <div class="container-fluid">
+          <div class="logo">
+            <a href="#"
+              ><img srcset="img/home-icon-header.png" alt="logo-header"
+            /></a>
+          </div>
+          <ul class="menu">
+            <li>
+              <a class="" href="http://localhost:3000/index.html">Trang chủ</a>
+            </li>
+            <li><a href="http://localhost:3000/about.html">Về Chúng tôi</a></li>
+            <li><a href="http://localhost:3000/service.html">Dịch vụ</a></li>
+            <li><a href="http://localhost:3000/events.html">Sự Kiện</a></li>
+            <li><a href="http://localhost:3000/menu.html">thực đơn</a></li>
+            <li><a href="http://localhost:3000/location.html">Điểm đến</a></li>
+            <li><a href="http://localhost:3000/library.html">Thư viện</a></li>
+            <li>
+              <a class="active" href="http://localhost:3000/contact.html"
+                >Liên hệ</a
+              >
+            </li>
+          </ul>
+          <div class="table">
+            <div class="lang">
+              <div class="lang__current">
+                <span>EN</span>
+              </div>
+              <div class="lang__select">
+                <a href="#" class="lang__select-item">VN</a>
+                <a href="#" class="lang__select-item">EU</a>
+                <a href="#" class="lang__select-item">JP</a>
+              </div>
+            </div>
+            <a href="#" class="buttonslider"><span>Đặt bàn</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="headermobile">
+        <div class="container-fluid">
+          <div class="table">
+            <div class="btnmobile"><span></span></div>
+          </div>
+          <div class="logo">
+            <a href="#"
+              ><img srcset="img/home-icon-header.png" alt="logo-header"
+            /></a>
+          </div>
+          <a href="#" class="search">
+            <img src="img/search-item.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- NAV -->
+    <nav class="nav">
+      <ul class="menu">
+        <li>
+          <a class="navmobile" href="http://localhost:3000/index.html"
+            >Trang chủ</a
+          >
+        </li>
+
+        <li>
+          <a class="navmobile" href="http://localhost:3000/about.html"
+            >Về Chúng tôi</a
+          >
+        </li>
+        <li>
+          <a class="navmobile" href="http://localhost:3000/service.html"
+            >Dịch vụ</a
+          >
+        </li>
+        <li>
+          <a class="navmobile" href="http://localhost:3000/events.html"
+            >Sự Kiện</a
+          >
+        </li>
+        <li>
+          <a class="navmobile" href="http://localhost:3000/menu.html"
+            >thực đơn</a
+          >
+        </li>
+        <li>
+          <a class="navmobile" href="http://localhost:3000/location.html"
+            >Điểm đến</a
+          >
+        </li>
+        <li>
+          <a class="navmobile" href="http://localhost:3000/library.html"
+            >Thư viện</a
+          >
+        </li>
+        <li>
+          <a class="navmobile active" href="http://localhost:3000/contact.html"
+            >Liên hệ</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- MAIN -->
+    <main class="mainwrapper">
+      <section class="scbanner">
+        <div class="banner__img">
+          <img src="img/contact-banner.jpg" alt="" />
+          <div class="banner__content">
+            <div class="container">
+              <div class="banner__content-wrap">
+                <div class="title">Liên hệ</div>
+                <div class="describe">
+                  <div class="describe-left">Trang chủ</div>
+                  <div class="describe-right">Liên hệ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sccontactinfo --pd">
+        <div class="container">
+          <div class="contact__wrap">
+            <div class="contact__wrap-form">
+              <div class="form__item">
+                <div class="form__item-img">
+                  <img src="img/home-table-side.png" alt="" />
+                </div>
+                <div class="form__item-form">
+                  <div class="form">
+                    <div class="form-title">Make a Reserve</div>
+                    <form action="" class="form-info">
+                      <div class="input">
+                        <input
+                          type="text"
+                          class="input-field"
+                          value=""
+                          required
+                        />
+                        <label class="input-label">Họ Tên</label>
+                      </div>
+                      <div class="input">
+                        <input
+                          type="text"
+                          class="input-field"
+                          value=""
+                          required
+                        />
+                        <label class="input-label">Điện thoại</label>
+                      </div>
+                      <select name="" id="" class="input">
+                        <option value="">1 Người</option>
+                        <option value="">2 Người</option>
+                        <option value="">3 Người</option>
+                        <option value="">4 Người</option>
+                        <option value="">5 Người</option>
+                      </select>
+                      <input
+                        class="time"
+                        type="date"
+                        id=""
+                        name=""
+                        value="2018-06-12"
+                        min="2022-10-11"
+                        max="2032-10-11"
+                      />
+                      <select name="" id="" class="input">
+                        <option value="">19 : 00</option>
+                        <option value="">20 : 00</option>
+                        <option value="">21 : 00</option>
+                        <option value="">22 : 00</option>
+                        <option value="">23 : 00</option>
+                      </select>
+                      <div class="btnform">
+                        <a href="#" class="button"><span>Đặt bàn</span></a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact__wrap-info">
+              <div class="textbox --right">
+                <div class="textbox-title">
+                  <div class="ourblog">Our Contact</div>
+                  <h3 class="title">Contact Us</h3>
+                  <span></span>
+                </div>
+              </div>
+              <p class="describe">
+                Get in touch to discuss your employee wellbeing needs today.
+                Please give us a call, drop us an email or fill out the contact
+                form and we’ll get back to you.
+              </p>
+              <div class="detail">
+                <div class="contactdetail">
+                  <img src="img/home-contact-location.png" alt="" />
+                  <div class="text">
+                    <div class="text-title">We are Here:</div>
+                    <p>5 Rue Dalou, 75015 Paris</p>
+                  </div>
+                </div>
+                <div class="contactdetail">
+                  <img src="img/home-contact-phone.png" alt="" />
+                  <div class="text">
+                    <div class="text-title">Phone Us:</div>
+                    <p>+33 156 78 89 56</p>
+                  </div>
+                </div>
+                <div class="contactdetail">
+                  <img src="img/home-contact-mail.png" alt="" />
+                  <div class="text">
+                    <div class="text-title">Mail Us:</div>
+                    <p>info@sunsetsorrento.vn</p>
+                  </div>
+                </div>
+              </div>
+              <div class="social">
+                <a href="#" target="_blank">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="16" cy="16" r="16" fill="#B68C2D" />
+                    <path
+                      d="M22.1064 13.1824C22.1168 13.3224 22.1168 13.4616 22.1168 13.6008C22.1168 17.8608 18.8744 22.7696 12.9488 22.7696C11.1232 22.7696 9.4272 22.2408 8 21.3224C8.2592 21.352 8.5088 21.3624 8.7784 21.3624C10.2288 21.3659 11.6381 20.8809 12.7792 19.9856C12.1067 19.9734 11.4549 19.7516 10.9146 19.351C10.3743 18.9504 9.97263 18.3911 9.7656 17.7512C9.9648 17.7808 10.1648 17.8008 10.3744 17.8008C10.6632 17.8008 10.9536 17.7608 11.2232 17.6912C10.4934 17.5439 9.83718 17.1483 9.36609 16.5717C8.89501 15.9952 8.63815 15.2733 8.6392 14.5288V14.4888C9.0688 14.728 9.5672 14.8776 10.0952 14.8976C9.65287 14.6037 9.29018 14.2048 9.03947 13.7366C8.78877 13.2684 8.65785 12.7455 8.6584 12.2144C8.6584 11.616 8.8176 11.0672 9.0968 10.5888C9.90651 11.5848 10.9164 12.3996 12.0611 12.9805C13.2057 13.5614 14.4596 13.8954 15.7416 13.9608C15.692 13.7208 15.6616 13.472 15.6616 13.2224C15.6614 12.7992 15.7446 12.38 15.9065 11.989C16.0683 11.5979 16.3057 11.2426 16.6049 10.9434C16.9042 10.6441 17.2595 10.4067 17.6506 10.2449C18.0416 10.083 18.4608 9.99979 18.884 10C19.812 10 20.6496 10.3888 21.2384 11.0176C21.9598 10.8781 22.6516 10.6147 23.2832 10.2392C23.0427 10.9839 22.539 11.6153 21.8664 12.0152C22.5062 11.9422 23.1315 11.774 23.7216 11.516C23.2809 12.1585 22.7348 12.7219 22.1064 13.1824Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a href="#" target="_blank"
+                  ><svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="16" cy="16" r="16" fill="#B68C2D" />
+                    <path
+                      d="M14.4942 24.0342H17.4242V16.7342H19.8742L20.2442 13.8942H17.4242V12.0742C17.4242 11.2542 17.6542 10.6942 18.8342 10.6942H20.3442V8.14418C20.0842 8.11418 19.1942 8.03418 18.1542 8.03418C15.9742 8.03418 14.4942 9.36418 14.4942 11.7942V13.8942H12.0342V16.7342H14.4942V24.0342Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a href="#" target="_blank"
+                  ><svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="16" cy="16" r="16" fill="#B68C2D" />
+                    <g clip-path="url(#clip0_262_3898)">
+                      <path
+                        d="M16.7008 22.0342H14.0342V14.0342H16.7008V15.3675C16.9816 15.0104 17.3379 14.7198 17.7442 14.5165C18.1504 14.3133 18.5967 14.2026 19.0508 14.1922C19.8451 14.1966 20.6052 14.5158 21.1644 15.0798C21.7237 15.6438 22.0365 16.4066 22.0342 17.2008V22.0342H19.3675V17.5342C19.3159 17.1739 19.1359 16.8444 18.8607 16.6062C18.5855 16.3681 18.2335 16.2374 17.8695 16.2382C17.7066 16.2433 17.5464 16.2813 17.3986 16.3499C17.2507 16.4185 17.1183 16.5162 17.0091 16.6373C16.9 16.7583 16.8164 16.9001 16.7634 17.0542C16.7105 17.2084 16.6892 17.3716 16.7008 17.5342V22.0342ZM12.7008 22.0342H10.0342V14.0342H12.7008V22.0342ZM11.3675 12.7008C11.0139 12.7008 10.6748 12.5604 10.4247 12.3103C10.1747 12.0603 10.0342 11.7211 10.0342 11.3675C10.0342 11.0139 10.1747 10.6748 10.4247 10.4247C10.6748 10.1747 11.0139 10.0342 11.3675 10.0342C11.7211 10.0342 12.0603 10.1747 12.3103 10.4247C12.5604 10.6748 12.7008 11.0139 12.7008 11.3675C12.7008 11.7211 12.5604 12.0603 12.3103 12.3103C12.0603 12.5604 11.7211 12.7008 11.3675 12.7008Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_262_3898">
+                        <rect
+                          width="12"
+                          height="12"
+                          fill="white"
+                          transform="translate(10.0342 10.0342)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a href="#" target="_blank"
+                  ><svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="16" cy="16" r="16" fill="#B68C2D" />
+                    <g clip-path="url(#clip0_262_3899)">
+                      <path
+                        d="M16.1012 11.9341C15.2903 11.9341 14.4976 12.1745 13.8234 12.625C13.1491 13.0756 12.6236 13.7159 12.3133 14.4651C12.003 15.2142 11.9218 16.0386 12.08 16.8339C12.2382 17.6293 12.6287 18.3598 13.2021 18.9332C13.7755 19.5066 14.506 19.8971 15.3013 20.0553C16.0967 20.2135 16.921 20.1323 17.6702 19.822C18.4194 19.5117 19.0597 18.9862 19.5102 18.3119C19.9607 17.6377 20.2012 16.845 20.2012 16.0341C20.2025 15.4953 20.0974 14.9615 19.8918 14.4635C19.6862 13.9655 19.3843 13.513 19.0033 13.132C18.6223 12.751 18.1698 12.4491 17.6718 12.2435C17.1737 12.0379 16.64 11.9328 16.1012 11.9341ZM16.1012 18.7041C15.5731 18.7041 15.0569 18.5475 14.6178 18.2541C14.1788 17.9607 13.8365 17.5437 13.6345 17.0558C13.4324 16.568 13.3795 16.0311 13.4825 15.5132C13.5855 14.9953 13.8398 14.5195 14.2132 14.1461C14.5866 13.7727 15.0624 13.5184 15.5803 13.4154C16.0982 13.3124 16.6351 13.3652 17.123 13.5673C17.6109 13.7694 18.0279 14.1116 18.3212 14.5507C18.6146 14.9898 18.7712 15.506 18.7712 16.0341C18.7712 16.7422 18.4899 17.4213 17.9892 17.922C17.4885 18.4228 16.8093 18.7041 16.1012 18.7041ZM21.3312 11.7641C21.3312 11.9619 21.2726 12.1552 21.1627 12.3196C21.0528 12.4841 20.8966 12.6123 20.7139 12.688C20.5312 12.7636 20.3301 12.7834 20.1361 12.7449C19.9421 12.7063 19.764 12.611 19.6241 12.4712C19.4843 12.3313 19.389 12.1531 19.3504 11.9592C19.3118 11.7652 19.3316 11.5641 19.4073 11.3814C19.483 11.1987 19.6112 11.0425 19.7756 10.9326C19.9401 10.8227 20.1334 10.7641 20.3312 10.7641C20.5964 10.7641 20.8508 10.8694 21.0383 11.057C21.2259 11.2445 21.3312 11.4989 21.3312 11.7641ZM24.0412 12.7641C24.0703 11.5209 23.6066 10.3167 22.7512 9.41407C21.8534 8.54776 20.6486 8.07303 19.4012 8.09407C18.1012 8.03407 14.1012 8.03407 12.8012 8.09407C11.5584 8.06716 10.355 8.53057 9.45121 9.38407C8.59584 10.2867 8.13212 11.4909 8.16121 12.7341C8.10121 14.0341 8.10121 18.0341 8.16121 19.3341C8.13212 20.5772 8.59584 21.7815 9.45121 22.6841C10.355 23.5376 11.5584 24.001 12.8012 23.9741C14.1212 24.0541 18.0812 24.0541 19.4012 23.9741C20.6444 24.0032 21.8486 23.5394 22.7512 22.6841C23.6066 21.7815 24.0703 20.5772 24.0412 19.3341C24.1012 18.0341 24.1012 14.0341 24.0412 12.7341V12.7641ZM22.3412 20.7641C22.2054 21.108 22.0005 21.4204 21.739 21.6819C21.4775 21.9433 21.1651 22.1483 20.8212 22.2841C19.2688 22.5979 17.6818 22.7055 16.1012 22.6041C14.524 22.7057 12.9402 22.5981 11.3912 22.2841C11.0473 22.1483 10.7349 21.9433 10.4734 21.6819C10.212 21.4204 10.007 21.108 9.87121 20.7641C9.45121 19.7041 9.54121 17.2041 9.54121 16.0441C9.54121 14.8841 9.45121 12.3741 9.87121 11.3241C10.0032 10.9767 10.2067 10.661 10.4685 10.3974C10.7304 10.1339 11.0448 9.92829 11.3912 9.79407C12.9402 9.48005 14.524 9.37245 16.1012 9.47407C17.6818 9.37262 19.2688 9.48021 20.8212 9.79407C21.1651 9.92985 21.4775 10.1348 21.739 10.3963C22.0005 10.6577 22.2054 10.9701 22.3412 11.3141C22.7612 12.3741 22.6612 14.8741 22.6612 16.0341C22.6612 17.1941 22.7612 19.7041 22.3412 20.7541V20.7641Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_262_3899">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="translate(8.10156 8.03418)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a href="#" target="_blank"
+                  ><svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="16" cy="16" r="16" fill="#B68C2D" />
+                    <g clip-path="url(#clip0_262_3900)">
+                      <path
+                        d="M23.1771 12.2331C23.0961 11.9326 22.9378 11.6585 22.718 11.4382C22.4982 11.2179 22.2245 11.0589 21.9242 10.9773C20.8106 10.6715 16.3554 10.6665 16.3554 10.6665C16.3554 10.6665 11.901 10.6615 10.7867 10.9538C10.4866 11.0392 10.2134 11.2004 9.99353 11.4218C9.77362 11.6432 9.61431 11.9174 9.53091 12.2182C9.23722 13.3318 9.23438 15.6414 9.23438 15.6414C9.23438 15.6414 9.23153 17.9625 9.52309 19.0647C9.68664 19.6742 10.1666 20.1556 10.7768 20.3198C11.9018 20.6256 16.3448 20.6306 16.3448 20.6306C16.3448 20.6306 20.7999 20.6356 21.9135 20.344C22.2139 20.2625 22.4879 20.1039 22.7083 19.8841C22.9286 19.6642 23.0878 19.3906 23.17 19.0903C23.4644 17.9774 23.4666 15.6685 23.4666 15.6685C23.4666 15.6685 23.4808 13.3467 23.1771 12.2331ZM14.9304 17.7812L14.9339 13.5145L18.6367 15.6514L14.9304 17.7812Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_262_3900">
+                        <rect
+                          width="14.9334"
+                          height="10.6667"
+                          fill="white"
+                          transform="translate(8.5332 10.6665)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="scmap">
+        <div class="container-fluid">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.57403711219!2d106.65914345080694!3d10.767275062268078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f395fd1dc21%3A0xa0d9dc906e1f6626!2sCFD%20Circle!5e0!3m2!1sen!2s!4v1668744961647!5m2!1sen!2s"
+              class="minimap"
+              width="100%"
+              height="468"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__wrap">
+        <div class="container">
+          <div class="detail">
+            <div class="contact__wrap">
+              <div class="title">Contact</div>
+              <div class="detail__wrap">
+                <div class="contactdetail">
+                  <img src="img/home-contact-location.png" alt="" />
+                  <p>5 Rue Dalou, 75015 Paris</p>
+                </div>
+                <div class="contactdetail">
+                  <img src="img/home-contact-phone.png" alt="" />
+                  <p>+33 156 78 89 56</p>
+                </div>
+                <div class="contactdetail">
+                  <img src="img/home-contact-mail.png" alt="" />
+                  <p>reservation</p>
+                </div>
+              </div>
+            </div>
+            <div class="logo__wrap">
+              <div class="logo">
+                <img src="img/home-icon-header.png" alt="" />
+              </div>
+              <div class="describe">
+                Whisper to us about your feelings, and we will prepare what you
+                need now.
+              </div>
+              <div class="social">
+                <a target="_blank" href="#"
+                  ><img src="img/footer-twitter.svg" alt=""
+                /></a>
+                <a target="_blank" href="#"
+                  ><img src="img/footer-fb.svg" alt=""
+                /></a>
+                <a target="_blank" href="#"
+                  ><img src="img/footer-lnd.svg" alt=""
+                /></a>
+                <a target="_blank" href="#"
+                  ><img src="img/footer-ins.svg" alt=""
+                /></a>
+                <a target="_blank" href="#"
+                  ><img src="img/footer-youtube.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="opendoor__wrap">
+              <div class="title">Giờ mở cửa</div>
+              <div class="time__wrap">
+                <div class="timedetail">
+                  <div class="day">Thứ 2 – Thứ 6:</div>
+                  <div class="time">7:00 giờ – 18:00 giờ</div>
+                </div>
+                <div class="timedetail">
+                  <div class="day">Thứ 7:</div>
+                  <div class="time">7:00 giờ – 18:00 giờ</div>
+                </div>
+                <div class="timedetail">
+                  <div class="day">Chủ nhật:</div>
+                  <div class="time">8:00 giờ – 18:00 giờ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>Copyright © 2022 Sunset Sorrento Restaurant. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <div class="btnbtt"><img src="img/back-to-top.png" alt="" /></div>
+
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+.btnmain {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  p {
+    font-family: "OswaldRegular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    background: $btn-cl;
+    color: $white-cl;
+    text-transform: uppercase;
+    padding: 0 55px;
+    height: 56px;
+    transition: 0.3s;
+    @include midflex;
+    position: relative;
+    &::after {
+      content: "";
+      border: 1px solid $main-cl;
+      width: calc(100% + 10px) !important;
+      height: calc(100% + 10px) !important;
+      @include midimg();
+      pointer-events: none;
+    }
+    &:hover {
+      background: $main-cl;
+      transition: 0.3s;
+    }
+  }
+}
+.buttonslider {
+  font-family: "OswaldRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background: $main-cl;
+  text-align: center;
+  cursor: pointer;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: 0.4s;
+  span {
+    transition: 0.4s;
+    padding: 0 53px;
+    color: $white-cl;
+  }
+  &:hover {
+    transition: 0.4s;
+    color: $bg-second-cl;
+    background: $white-cl;
+    span {
+      transition: 0.4s;
+      color: $black-cl;
+    }
+  }
+}
+.btn-play-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    svg {
+      stroke: $main-cl;
+      transition: 0.4s;
+      stroke-width: 2px;
+    }
+  }
+}
+@include xs {
+  .btnmain {
+    p {
+      height: 42px;
+      padding: 0 42px;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.eventspage {
+  .service__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 24px;
+  }
+  .service__wrap-mobile {
+    display: none;
+  }
+  .servicebtn {
+    padding-top: 64px;
+  }
+}
+@include sm {
+  .eventspage {
+    .service__wrap {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      .column__item {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@include xs {
+  .eventspage {
+    .service__wrap {
+      display: none;
+      .column__item {
+        &:last-child {
+          display: block;
+        }
+      }
+    }
+    .service__wrap-mobile {
+      display: block;
+    }
+  }
+}

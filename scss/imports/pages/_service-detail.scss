@@ -1,0 +1,144 @@
+.servicedetailpage {
+  .scbanner {
+    .banner__img {
+      .banner__content {
+        top: 60%;
+        .banner__content-wrap {
+          display: block;
+          text-transform: initial;
+          .title {
+            margin-bottom: 25px;
+          }
+          .describe {
+            font-family: "RalewayRegular";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            &-left {
+              color: $white-cl;
+            }
+            &-center {
+              color: $white-cl;
+            }
+          }
+        }
+      }
+    }
+  }
+  .scwrap__all-item {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 24px;
+      .wrap {
+        grid-column: 3/11;
+        &__text {
+          &-title {
+            font-family: "OswaldLight";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 40px;
+          }
+          &-content {
+            font-family: "MontserratRegular";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 24px;
+            &.--first {
+              padding-bottom: 40px;
+            }
+            &.--second {
+              padding-bottom: 135px;
+              margin-top: initial;
+            }
+          }
+        }
+        &__img {
+          padding-top: 48px;
+          padding-bottom: 84px;
+        }
+        .form__item {
+          padding-bottom: 120px;
+          &-form {
+            // width: 65%;
+          }
+        }
+        .wrap__service {
+          padding-top: 80px;
+          &-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            .wrap-item {
+              color: $white-cl;
+              .describe {
+                text-align: center;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 40px;
+              }
+              &:hover {
+                color: $main-cl;
+              }
+            }
+          }
+          &-title {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 40px;
+            padding-bottom: 38px;
+          }
+        }
+      }
+    }
+  }
+}
+@include md {
+  .servicedetailpage {
+    .scbanner {
+      .banner__img {
+        .banner__content {
+          .banner__content-wrap {
+            .title {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include xs {
+  .servicedetailpage {
+    .scwrap__all-item {
+      .container {
+        .wrap__img {
+          padding-top: 10px;
+          padding-bottom: 20px;
+        }
+        .wrap__text {
+          .wrap__text-content {
+            &.--second {
+              padding-bottom: 35px;
+            }
+          }
+        }
+      }
+    }
+    .scwrap__all-item {
+      .container {
+        .wrap {
+          .wrap__service-item {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+// css header
+header {
+  .headermain {
+    height: var(--height-header);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: $bg-3rd-cl;
+    z-index: 400;
+    .container-fluid {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      .menu {
+        gap: 24px;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        align-items: center;
+        li {
+          width: max-content;
+          height: 100%;
+          a {
+            @include midflex();
+            font-size: 14px;
+            color: $white-cl;
+            font-family: "OswaldRegular";
+            font-style: normal;
+            line-height: 20px;
+            text-transform: uppercase;
+            height: 100%;
+            transition: 0.3s;
+            flex-direction: column;
+            &:hover {
+              transition: 0.3s;
+              color: $main-cl;
+            }
+            &.active {
+              color: $main-cl;
+            }
+          }
+        }
+      }
+      .table {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .lang {
+          position: relative;
+          height: 100%;
+          cursor: pointer;
+          &__current {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            span {
+              font-weight: 400;
+              font-family: "OswaldRegular";
+              font-size: 14px;
+              line-height: 20px;
+              text-transform: uppercase;
+              padding: 0 30px;
+            }
+          }
+          &__select {
+            background-color: $bg-3rd-cl;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            width: auto;
+            @include midflex();
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            a {
+              font-family: "OswaldRegular";
+              color: $white-cl;
+            }
+          }
+          &.active {
+            .lang__select {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .headermobile {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    height: var(--height-header);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: $bg-3rd-cl;
+    z-index: 399;
+    .container-fluid {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      .table {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+@include md {
+  header {
+    .headermain {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .headermobile {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: visible;
+    }
+  }
+}
+@include xs {
+  header {
+    .container-fluid {
+      .table {
+        .buttonslider {
+          opacity: 0;
+          visibility: hidden;
+        }
+        .lang {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}

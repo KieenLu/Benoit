@@ -1,0 +1,62 @@
+/* FONT FACE - font-display: fallback; */
+
+/* VÍ DỤ - tuỳ chỉnh theo từng dự án*/
+
+@font-face {
+  font-family: "Cormorant-SBI";
+  src: url("../fonts/Cormorant-SemiBoldItalic.woff2") format("woff2"),
+    url("../fonts/Cormorant-SemiBoldItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "CormorantItalic";
+  src: url("../fonts/Cormorant-Italic.woff2") format("woff2"),
+    url("../fonts/Cormorant-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "OswaldLight";
+  src: url("../fonts/Oswald-Light.woff2") format("woff2"),
+    url("../fonts/Oswald-Light.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "OswaldRegular";
+  src: url("../fonts/Oswald-Regular.woff2") format("woff2"),
+    url("../fonts/Oswald-Regular.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"),
+    url("../fonts/Raleway-Regular.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}

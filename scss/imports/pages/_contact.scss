@@ -1,0 +1,101 @@
+.contactpage {
+  .sccontactinfo {
+    .contact__wrap {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 24px;
+      &-form {
+        grid-column: 1/7;
+      }
+      &-info {
+        grid-column: 7/13;
+        padding-left: 58px;
+        .describe {
+          font-family: "MontserratRegular";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+        }
+        .detail {
+          padding: 16px 0;
+          .contactdetail {
+            display: flex;
+            align-items: center;
+            .text {
+              padding-left: 22px;
+              &-title {
+                font-family: "OswaldLight";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 40px;
+              }
+              p {
+                font-family: "MontserratRegular";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+              }
+            }
+            &:not(:first-child) {
+              padding-top: 8px;
+            }
+          }
+        }
+        .social {
+          display: flex;
+          align-items: center;
+          a {
+            &:not(:first-child) {
+              padding-left: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include md {
+  .contactpage {
+    .sccontactinfo {
+      .contact__wrap {
+        &-form {
+        }
+        &-info {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+@include sm {
+  .contactpage {
+    .sccontactinfo {
+      .contact__wrap {
+        &-form {
+          grid-column: 1/13;
+          .form__item {
+            flex-direction: row-reverse;
+            &-img {
+              display: flex;
+              justify-content: end;
+            }
+          }
+        }
+        &-info {
+          grid-column: 1/13;
+          grid-row: 1/2;
+        }
+      }
+    }
+    .scmap {
+      .map {
+        .minimap {
+          height: 268px;
+        }
+      }
+    }
+  }
+}
