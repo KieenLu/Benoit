@@ -180,6 +180,7 @@ function handleSliderEvents() {
 }
 
 if (document.getElementById("servicepage")) {
+  handleNumberServicePage();
   handleSliderService();
 }
 if (document.getElementById("eventspage")) {
@@ -321,4 +322,3 @@ function handleNumberServicePage() {
     }
   });
 }
-handleNumberServicePage();
